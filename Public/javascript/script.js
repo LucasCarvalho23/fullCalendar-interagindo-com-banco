@@ -18,10 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     editable: true,
     selectable: true,
     selecMirror: true,
-    dayMaxEvents: true, 
-
+    dayMaxEvents: true,
     events: '../php/autenticacao.php'
-
   });
 
   calendar.render();
