@@ -14,7 +14,33 @@
 
     <div id="calendar"></div>
 
-    <a href="./autenticacao.php">TESTAR O PHP</a>
+
+    <div class="modal fade" id="visualizarModal" tabindex="-1" aria-labelledby="visualizarModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="visualizarModalLabel">Confirmação</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <dl class="row">
+                    <dt class="col-sm-3">Título:</dt>
+                    <dd class="col-sm-9" id="visualizarTitle"></dd>
+                    <dt class="col-sm-3">Início:</dt>
+                    <dd class="col-sm-9" id="visualizarInicio"></dd>
+                    <dt class="col-sm-3">Fim:</dt>
+                    <dd class="col-sm-9" id="visualizarFim"></dd>
+                </dl>
+                <br>
+              <p>Deseja marcar presença?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+              <button type="button" class="btn btn-primary">Sim</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- script -->
     <script src="../javascript/script.js" type="module"></script>

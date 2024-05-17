@@ -20,7 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
     selectable: true,
     selecMirror: true,
     dayMaxEvents: true,
-    events: '../php/autenticacao.php'
+    events: '../php/autenticacao.php',
+
+    eventClick: function(info) {
+      const visualizarModal = new bootstrap.Modal(document.querySelector("#visualizarModal"))
+      document.querySelector("#visualizarTitle").innerHTML = info.event.title
+      document.querySelector("#visualizarInicio").innerHTML = info.event.start.toLocaleString()
+      document.querySelector("#visualizarFim").innerHTML = info.event.end.toLocaleString()
+
+      visualizarModal.show()
+    }
   });
 
   calendar.render();
