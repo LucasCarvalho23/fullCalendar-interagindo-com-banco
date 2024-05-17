@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2024 at 12:36 AM
+-- Generation Time: May 17, 2024 at 01:36 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -31,8 +31,8 @@ CREATE TABLE `tb_events` (
   `id` int(11) NOT NULL,
   `title` varchar(100) NOT NULL,
   `color` varchar(45) NOT NULL,
-  `start` date NOT NULL,
-  `end` date NOT NULL
+  `start` datetime NOT NULL,
+  `end` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -40,12 +40,12 @@ CREATE TABLE `tb_events` (
 --
 
 INSERT INTO `tb_events` (`id`, `title`, `color`, `start`, `end`) VALUES
-(1, 'Event title 01', '#007bff', '2024-05-01', '2024-05-05'),
-(2, 'Event title 02', '#6c757d', '2024-05-07', '2024-05-07'),
-(3, 'Event title 03', '#28a745', '2024-05-10', '2024-05-11'),
-(4, 'Event title 04', '#dc3545', '2024-05-14', '2024-05-14'),
-(5, 'Event title 05', '#ffc107', '2024-05-23', '2024-05-25'),
-(6, 'Event title 06', '#17a2b8', '2024-05-28', '2024-05-29');
+(1, 'Event title 01', '#007bff', '2024-05-01 10:30:00', '2024-05-05 12:30:00'),
+(2, 'Event title 02', '#6c757d', '2024-05-07 09:00:00', '2024-05-07 11:00:00'),
+(3, 'Event title 03', '#28a745', '2024-05-10 08:00:00', '2024-05-11 10:00:00'),
+(4, 'Event title 04', '#dc3545', '2024-05-14 11:00:00', '2024-05-14 13:00:00'),
+(5, 'Event title 05', '#ffc107', '2024-05-23 12:00:00', '2024-05-25 14:00:00'),
+(6, 'Event title 06', '#17a2b8', '2024-05-28 14:00:00', '2024-05-29 16:00:00');
 
 --
 -- Indexes for dumped tables
