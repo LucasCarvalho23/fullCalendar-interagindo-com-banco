@@ -29,7 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector("#visualizarFim").innerHTML = info.event.end.toLocaleString()
 
       visualizarModal.show()
+    },
+
+    select: function(info) {
+      const cadastrarModal = new bootstrap.Modal(document.querySelector("#cadastrarModal"))
+      cadastrarModal.show()
     }
+
   });
 
   calendar.render();
