@@ -9,7 +9,6 @@
             $conexao = new Conection();
             $consulta = new Consulta($conexao);
             $consulta->read();
-
         }
 
     }
